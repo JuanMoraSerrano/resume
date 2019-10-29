@@ -131,6 +131,15 @@ h2 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.anotherSkillsContainerArticle {
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .project-course,
 .project-date,
 .project-url {
@@ -421,6 +430,60 @@ figure {
   justify-content: center;
 }
 
+.anotherSkillsContainer {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.anotherSkillsFirstSubContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+
+.anotherSkillsThirdtSubContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.anotherSkillsDivChildren {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.anotherSkillsDivChildrenAlone {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.anotherSkills-image {
+  width: 75%;
+  height: 75%;
+  border-radius: 5px;
+}
+
+.blueOval {
+  display: flex;
+  background-color: #056fff;
+  border-radius: 20px;
+}
+
+.labelBlueOval {
+  font-size: 15px;
+  font-weight: bold;
+  color: antiquewhite;
+  margin: 4px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 /* desktop first que empieces desde el MQ más grande*/
 
 @media screen and (max-width: 1023px) {
@@ -460,6 +523,12 @@ figure {
   }
   .professionalSummary {
     font-size: 1.5rem;
+  }
+
+  .anotherSkills-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
   }
 }
 
@@ -577,6 +646,15 @@ figure {
   .titleName {
     font-size: 2rem;
   }
+
+  .labelBlueOval {
+    font-size: 13px;
+    font-weight: bold;
+    color: antiquewhite;
+    margin: 5px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -634,6 +712,31 @@ figure {
   .professionalSummary {
     font-size: 1rem !important;
   }
+
+  .labelBlueOval {
+    font-size: 10px;
+    margin: 5px;
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+
+  .anotherSkillsContainerArticle {
+    padding: 0px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .labelBlueOval {
+    font-size: 9px;
+    margin: 4px;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -644,5 +747,12 @@ figure {
 
   .hero {
     padding: 2em 1em;
+  }
+
+  .labelBlueOval {
+    font-size: 8.5px;
+    margin: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
