@@ -28,14 +28,24 @@ var file = (function($) {
       }
     }
 
+    $("body").on("click", function() {
+      if (menu.classList.contains("is-active")) {
+        setTimeout(() => {
+          menu.classList.remove("is-active");
+        }, 2);
+      }
+    });
+
     validation(ipad);
 
     function hideShow() {
-      if (menu.classList.contains("is-active")) {
-        menu.classList.remove("is-active");
-      } else {
-        menu.classList.add("is-active");
-      }
+      setTimeout(() => {
+        if (menu.classList.contains("is-active")) {
+          menu.classList.remove("is-active");
+        } else {
+          menu.classList.add("is-active");
+        }
+      }, 1);
     }
 
     function prepareEmail() {
