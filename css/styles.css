@@ -454,13 +454,14 @@ figure {
 .anotherSkillsDivChildren {
   display: flex;
   flex: 1;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
+
 .anotherSkillsDivChildrenAlone {
   display: flex;
   flex: 1;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -472,6 +473,7 @@ figure {
 
 .blueOval {
   display: flex;
+  margin: 7px;
   background-color: #056fff;
   border-radius: 20px;
 }
